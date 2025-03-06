@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -29,26 +28,10 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				real: {
-					50: '#f7f7f7',
-					100: '#ededed',
-					200: '#e3e3e3',
-					300: '#d1d1d1',
-					400: '#adadad',
-					500: '#8a8a8a',
-					600: '#636363',
-					700: '#4d4d4d',
-					800: '#303030',
-					900: '#1a1a1a',
-					950: '#0a0a0a',
-				},
-				accent: {
-					DEFAULT: '#C8A87A',
-					light: '#D9BD94',
-					dark: '#B79563',
-				},
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: '#18CCFC',
+					light: '#6344F5',
+					dark: '#AE48FF',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
@@ -64,7 +47,9 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
+					DEFAULT: '#18CCFC',
+					light: '#6344F5',
+					dark: '#AE48FF',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {

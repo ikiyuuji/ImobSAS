@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Loader2 } from 'lucide-react';
@@ -26,11 +25,11 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const variantStyles = {
-    primary: 'bg-accent hover:bg-accent-dark text-white shadow-sm transition-all duration-300 ease-in-out',
+    primary: 'bg-primary hover:bg-primary-light text-white shadow-sm transition-all duration-300 ease-in-out',
     secondary: 'bg-secondary hover:bg-secondary/80 text-secondary-foreground shadow-sm',
-    outline: 'border border-accent text-accent hover:bg-accent/10',
-    ghost: 'hover:bg-accent/10 text-accent',
-    link: 'text-accent underline-offset-4 hover:underline p-0 h-auto',
+    outline: 'border border-white/20 text-white hover:bg-white/10',
+    ghost: 'hover:bg-white/10 text-white',
+    link: 'text-primary underline-offset-4 hover:underline p-0 h-auto',
   };
 
   const sizeStyles = {
@@ -44,7 +43,7 @@ const Button: React.FC<ButtonProps> = ({
       type="button"
       disabled={disabled || isLoading}
       className={cn(
-        'font-medium relative inline-flex items-center justify-center gap-2 transition-all focus:outline-none focus:ring-2 focus:ring-accent/30 disabled:opacity-60 disabled:pointer-events-none',
+        'font-medium relative inline-flex items-center justify-center gap-2 transition-all focus:outline-none focus:ring-2 focus:ring-primary/30 disabled:opacity-60 disabled:pointer-events-none',
         variantStyles[variant],
         sizeStyles[size],
         fullWidth ? 'w-full' : '',
